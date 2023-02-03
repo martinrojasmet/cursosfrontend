@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    
+    <header class="header"> 
+        <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" 
+        alt="coffee_masters_logo_head"
+        class="logo">
+        <h1 class="title_head">Coffee Masters</h1>
+    </header>
+
+    <div class="body">
+        <section class="cart section">
+            <h2 class="sub_title color_text2">ITEMS</h2>
+            <ul class="items">
+                <li class="product_list_item">
+                    <div class="product">
+                        <div class="quantity_product color_text1">1x</div>
+                        <div class="order color_text1">Capuccino</div>
+                        <div class="amount color_text1">$3.35</div>
+                        <div class="details_order color_text2">Lite foam</div>
+                    </div>
+                </li>
+
+                <li class="product_list_item">
+                    <div class="product">
+                        <div class="quantity_product color_text1">1x</div>
+                        <div class="order color_text1">Capuccino</div>
+                        <div class="amount color_text1">$3.85</div>
+                        <div class="details_order">
+                            <div class="details_list color_text2">Lite milk</div>
+                            <div class="details_list color_text2">Double espresso</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="product_list_item">
+                    <div class="product">
+                        <div class="quantity_product color_text1">1x</div>
+                        <div class="order color_text1">Croissant</div>
+                        <div class="amount color_text1">$2.45</div>
+                        <div class="details_order color_text2">Butter</div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="client_info section">
+            <h2 class="sub_title color_text2">NAME</h2>
+            <label for="name_for_order" class="input_label color_text2">Name for order</label>
+            <input id="name_for_order" class="input section" placeholder="Ford Prefect"/>
+        </section>
+
+        <section class="client_payment_info section">
+            <h2 class="sub_title color_text2">PAYMENT</h2>
+            <div class="card_info">
+                <label for="card_number" class="input_label color_text2">Card number</label>
+                <input id="card_number" class="input section" placeholder="1234 5678 9012 3456"/>
+
+                <label for="cvv_number" class="input_label color_text2">CVV</label>
+                <input id="cvv_number" class="input cvv section" placeholder="001"/>
+            </div>    
+        </section>
+    </div>
+    <section class="purchase_info">
+        <div class="left_column">
+            <p class="purchase_text">Subtotal:</p>
+            <p class="purchase_text">Tax:</p>
+            <p class="purchase_text_bold">Total:</p>
+        </div>
+        <div class="right_column">
+            <p class="purchase_text">$9.65</p>
+            <p class="purchase_text">$0.82</p>
+            <p class="purchase_text_bold">$10.47</p>
+        </div>
+    </section>
+    <div class="purchase_section">
+        <div class="purchase_button">
+            <div class="place_order">Place order</div>
+        </div>
+    </div>
+
+</body>
+</html>

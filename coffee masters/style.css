@@ -1,0 +1,176 @@
+*{
+    font-family: Open Sans;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.header{
+   background-color:#43281C;
+   box-sizing: border-box;
+   color: #FBF2C0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 70px;
+   font-size: 15px;
+}
+
+.logo {
+    width: 40px;
+    padding: .5%;
+}
+
+.title_head {
+    font-size: 15px;
+
+}
+
+.color_background {
+    color: #43281C;
+}
+
+.color_text1 {
+    color: #353F2B;
+}
+
+.color_text2 {
+    color: #926943;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "quantity order amount"
+    "quantity details amount";
+    row-gap: 8px;
+    
+}
+
+.product_list_item {
+    border-bottom: 2px solid #DDB892;
+    list-style: none;
+}
+
+.product_list_item:last-child {
+    border-bottom: none;
+}
+
+.quantity_product {
+    grid-area: quantity;
+}
+
+.order {
+    grid-area: order;
+    font-weight: bold;
+}
+
+.amount {
+    grid-area: amount;
+    font-weight: bold;
+}
+
+.details_order {
+    grid-area: details;
+    font-size: small;
+}
+
+.section {
+    background-color: #EDE0D4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    top: -20px;
+    left: 15px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase_info {
+    display: flex;
+    flex-direction: left;
+    align-content: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.client_info{
+    display: flex;
+    flex-direction: column;
+}
+.body {
+    display: grid;
+    grid-template-columns: 1fr 20fr 2fr 20fr 1fr;
+    grid-template-areas: ". cart  . client ."
+    ". cart .  payment .";
+    row-gap: 25px;
+}
+
+.cart {
+    grid-area: cart;
+}
+
+.client_info {
+    grid-area: client;
+}
+
+.client_payment_info {
+    grid-area: payment;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.purchase_button {
+    grid-area: purchase_button;
+    background-color: #DDB892;
+    color: #353F2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 50px;
+}
+
+.sub_title {
+    font-weight: normal;
+    font-size: medium;
+}
+
+.purchase_text_bold {
+    font-weight: bold;
+}
+.purchase_section{
+    display: flex;
+    justify-content: center;
+}
+
+.input_label {
+    font-size: 12px;
+    position: relative;
+    top: 7px;
+    right: -20px;
+    padding: 0 2px;
+}
+
+.input {
+    border-color: #7F4F24;
+    padding: 10px;
+    border-radius: 30px;
+    border-width: 1.5px;
+    width: 95%;
+}
+
+.cvv {
+    width: 30%;
+}
